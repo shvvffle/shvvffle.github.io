@@ -1,111 +1,122 @@
 body {
-  background-image: url(https://images.unsplash.com/photo-1477346611705-65d1883cee1e?dpr=1.25&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  font-family: Roboto, sans-serif;
-  font-size: 30px;
-  margin: 0;
-  width: 100%;
-  min-height: 100vh;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0; }
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: Roboto, sans-serif;
+    font-size: 30px;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
 
 a {
-  text-decoration: none; }
+    text-decoration: none;
+}
 
 .container {
-  min-height: 100vh;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
+    min-height: 100vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-.box, .description, .tools, .find-me {
-  align-self: center; }
+.box,
+.description,
+.tools,
+.find-me {
+    align-self: center;
+}
 
 .name {
-  color: #fff;
-  font-size: 40px;
-  margin-top: 5%;
-  text-align: center;
-  font-weight: 900;
-  letter-spacing: 0; }
-  .name:after, .name:before {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border: 1px solid rgba(255, 255, 255, 0);
-    bottom: 0px;
-    content: " ";
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    -webkit-transition: all 280ms ease-in-out;
-    transition: all 280ms ease-in-out;
-    width: 0; }
-  .name:hover:after, .name:hover:before {
-    -webkit-backface-visibility: hidden;
-    border-color: #fff;
-    -webkit-transition: width 350ms ease-in-out;
-    transition: width 350ms ease-in-out;
-    width: 70%; }
-  .name:hover:before {
-    bottom: auto;
-    top: 0;
-    width: 70%; }
-  .name:hover, .name:active {
-    letter-spacing: 5px; }
+    border: 3px solid #fff;
+    color: #fff;
+    font-size: 40px;
+    margin-top: 2%;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 15px;
+    padding: 0 100px;
+}
 
 .description {
-  color: #eee;
-  opacity: 0.8;
-  font-weight: bold;
-  margin-top: 2%;
-  text-align: center;
-  font-family: Merriweather, serif; }
+    color: #eee;
+    opacity: 0.8;
+    font-weight: bold;
+    margin-top: 2%;
+    text-align: center;
+    font-family: Merriweather, serif;
+}
 
 .tools {
-  margin-top: 3%;
-  color: #eee;
-  opacity: 0.8;
-  text-align: center;
-  display: flex;
-  width: 100%; }
+    margin-top: 20px;
+    color: #eee;
+    opacity: 0.8;
+    text-align: center;
+    display: flex;
+    width: 100%;
+}
 
-.packages, .languages {
-  flex: 1;
-  /*border: 1px solid #fff */
-  min-height: 10vh;
-  width: 50%; }
+.languages {
+    flex: 1;
+    min-height: 10vh;
+    width: 50%;
+}
 
 .find-me {
-  font-size: 70px;
-  margin-top: 2%;
-  display: flex;
-  flex-direction: row;
-  height: 70px; }
+    font-size: 70px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+}
 
 .find-me a {
-  color: #fff;
-  transition: all 0.5s; }
-  .find-me a:hover {
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.find-me a:hover {
     color: #000;
     opacity: 0.8;
     font-size: 100px;
-    transition: all 0.5s; }
+    transition: all 0.5s;
+}
 
 footer {
-  font-size: 12px;
-  color: #fff;
-  margin-top: 5%;
-  text-align: center; }
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+    color: #fff;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 480px) {
+    .name {
+        font-size: 20px;
+        padding: 0 8px;
+        letter-spacing: 3px;
+    }
+    .description {
+        font-size: 16px;
+    }
+}
+
 
 /*# sourceMappingURL=main.css.map */
