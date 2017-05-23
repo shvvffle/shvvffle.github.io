@@ -1,68 +1,99 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
 
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
     <title>Marina Marques | Front-End Developer</title>
-    <meta name="description" content="I'm a front-end developer based in Lisbon, Portugal.
-                Avid self-learner, proactive, organized and dedicated to everything I do.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- icon -->
+    <meta content="I'm a front-end developer based in Lisbon, Portugal. Avid self-learner, proactive, organized and dedicated to everything I do." name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport"><!-- icon -->
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-    <!-- css -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900|Merriweather">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link href="favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"><!-- css -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style type="text/css">
+    body {
+     padding: 0;
+     margin: 0;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     background: linear-gradient(to top, rgba(0, 0, 0, 0.639), rgba(0, 0, 0, 0.639)), url(https://instagram.flis6-1.fna.fbcdn.net/t51.2885-15/e35/16908618_650547161796132_4359618377849765888_n.jpg);
+     background-size: cover;
+     background-position: 50%;
+     width: 100%;
+     min-height: 100vh;
+     color: #fff;
+     background-repeat: repeat, no-repeat;
+     font-family: "Roboto", sans-serif;
+    }
+
+    .wrapper {
+     text-align: center;
+     width: 100%;
+     min-height: 100vh;
+     position: fixed;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-content: center;
+    }
+
+    .profile img {
+     width: 10%;
+    }
+
+    .profile h1 {
+     font-size: 50px;
+     font-weight: 700;
+    }
+
+    .bio {
+     font-size: 20px;
+     font-weight: 100;
+     width: 30%;
+     margin: 0 auto;
+    }
+
+    .social {
+     font-size: 20px;
+     margin-top: 50px;
+    }
+
+    .social a {
+     margin: 10px;
+     border: 3px solid #fff;
+     padding: 15px 20px;
+     border-radius: 5px;
+     color: #fff;
+    }
+    .social a:hover {
+     background: tomato;
+    }
+
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="box">
-            <div class="name">
-                <h1>marina marques</h1>
-            </div>
-        </div>
-        <div class="description">
-            <p><span id="my-traits">Front-end developer</span><span class="typer-effect">|</span> based in Lisbon</p>
-        </div>
-        <div class="tools">
-            <div class="languages">
-                <span class="devicons devicons-html5"></span>
-                <span class="devicons devicons-css3"></span>
-                <span class="devicons devicons-sass"></span>
-                <span class="devicons devicons-javascript_badge"></span>
-                <span class="devicons devicons-jquery"></span>
-                <span class="devicons devicons-gulp"></span>
-                <span class="devicons devicons-bootstrap"></span>
-                <span class="devicons devicons-wordpress"></span>
-            </div>
-        </div>
-        <div class="find-me">
-            <div class="codepen">
-                <a href="https://codepen.io/shvvffle" target="_blank">
-                    <span class="devicons devicons-codepen"></span>
-                </a>
-            </div>
-            <div class="github">
-                <a href="https://github.com/shvvffle" target="_blank">
-                    <span class="devicons devicons-github_alt"></span>
-                </a>
-            </div>
-            <div class="website">
-                <a href="http://marinamarques.pt" target="_blank">
-                    <span class="devicons devicons-terminal"></span>
-                </a>
-            </div>
-        </div>
-        <footer>
-            <p id="copyright"></p>
-        </footer>
-    </div>
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
+    <div class="wrapper">
+        <div class="profile">
+            <img src="http://marinamarques.pt/img/marina_marques_logo.png">
 
+            <h1>Marina Marques</h1>
+        </div>
+
+        <div class="bio">
+            <p>I'm a front-end developer based in Lisbon, Portugal. Currently working for Sherpany.</p>
+        </div>
+
+        <div class="social">
+            <a href="https://github.com/shvvffle" target="_blank"><i aria-hidden="true" class="fa fa-github"></i></a>
+            <a href="http://codepen.io/shvvffle" target="_blank"><i aria-hidden="true" class="fa fa-codepen"></i></a> <a href="https://www.linkedin.com/in/marinamarques9/" target="_blank"><i aria-hidden="true" class="fa fa-linkedin"></i></a>
+            <a href="mailto:9.marques.marina@gmail.com"><i aria-hidden="true" class="fa fa-envelope-open-o"></i></a>
+        </div>
+
+    </div>
+</body>
 </html>
